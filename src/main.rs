@@ -5,4 +5,5 @@ fn main() {
     ch1::formatted_print();
     ch2::primitives();
     ch2::literals_and_operators();
+    ch2::tuples();
 }
