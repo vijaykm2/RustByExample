@@ -1,5 +1,6 @@
-use std::fmt;
 mod ch2{
+    use std::fmt;
+    use std::mem;
     pub fn primitives(){
         let logical:bool = true;
         let a_float: f64=111.222;
@@ -35,8 +36,8 @@ mod ch2{
     // The following struct is for the activity.
     #[derive(Debug)]
     struct Matrix(f32, f32, f32, f32);
-    impl std::fmt::Display for Matrix{
-        fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+    impl fmt::Display for Matrix{
+        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
             write!(f,"\n ({} {})\n ({} {})", self.0, self.1, self.2, self.3)
         }
     }
