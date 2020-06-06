@@ -87,4 +87,31 @@ mod ch2{
         println!("transpose Display: {}", transpose(matrix));
 
     }
+    fn analyze_slice(slice:&[i32]){
+        println!("First element of slice: {}", slice[0]);
+        println!("slice has {} elements", slice.len());
+    }
+    pub fn arrays_and_splices(){
+
+        let xs:[i32; 5]=[1,2,3,4,78785];
+        let ys:[i32; 500]=[0;500];
+        // Indexing starts at 0
+        println!("first element of the array: {}", xs[0]);
+        println!("second element of the array: {}", xs[1]);
+
+        // `len` returns the size of the array
+        println!("array size: {}", xs.len());
+
+        // Arrays are stack allocated
+        println!("array occupies {} bytes", mem::size_of_val(&xs));
+        println!("Borrow the whole array as slice \n");
+        analyze_slice(&xs);
+
+        println!("Borrow the section of array as slice\n");
+        analyze_slice(&xs[1..3]);
+        analyze_slice(&ys[2..10]);
+        println!("{}",xs[4]);
+
+
+    }
 }

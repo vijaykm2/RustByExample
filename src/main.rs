@@ -6,4 +6,5 @@ fn main() {
     ch2::primitives();
     ch2::literals_and_operators();
     ch2::tuples();
+    ch2::arrays_and_splices();
 }
