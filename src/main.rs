@@ -3,6 +3,7 @@ include!("ch1/helloWorld.rs");
 include!("ch2/primitives.rs");
 include!("ch3/custom_types.rs");
 include!("ch4/variable_bindings.rs");
+include!("ch5/types.rs");
 fn main() {
     ch1::print_hw();
     ch1::formatted_print();
@@ -22,4 +23,7 @@ fn main() {
     var_bindings::mutability();
     var_bindings::scope_and_shadowing();
     var_bindings::declare_first();
+    var_bindings::freezing();
+    types::casting();
+    types::literals();
 }
