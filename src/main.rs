@@ -10,11 +10,15 @@ fn main() {
     ch2::literals_and_operators();
     ch2::tuples();
     ch2::arrays_and_splices();
+    // Chapter 3
     custom_types::structures();
     custom_types::enums();
     custom_types::enums_use();
     custom_types::enums_c_like();
     custom_types::enums_list();
     custom_types::constants();
+    // Chapter 4
     var_bindings::var_bindings();
+    var_bindings::mutability();
+    var_bindings::scope_and_shadowing();
 }
