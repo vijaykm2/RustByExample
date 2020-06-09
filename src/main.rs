@@ -10,4 +10,8 @@ fn main() {
     ch2::tuples();
     ch2::arrays_and_splices();
     custom_types::structures();
+    custom_types::enums();
+    custom_types::enums_use();
+    custom_types::enums_c_like();
+    custom_types::enums_list();
 }
