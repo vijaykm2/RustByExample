@@ -21,4 +21,5 @@ fn main() {
     var_bindings::var_bindings();
     var_bindings::mutability();
     var_bindings::scope_and_shadowing();
+    var_bindings::declare_first();
 }

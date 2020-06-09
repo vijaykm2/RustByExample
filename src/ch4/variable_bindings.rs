@@ -32,4 +32,27 @@ mod var_bindings {
         let long_lived_binding = "a";
         println!("Outer long_lived_binding: {}", long_lived_binding);
     }
+
+    pub fn declare_first() {
+        let a_binding;
+        {
+            let x = 22;
+            a_binding = x * x;
+        }
+        let another_binding;
+
+
+        another_binding = 1;
+
+        println!("another binding: {}", another_binding);
+    }
+
+    pub fn freezing() {
+        let mut mut_int = 123;
+        {
+            let mut_int = mut_int;
+            // mut_int = 323;
+        }
+        mut_int = 231
+    }
 }
