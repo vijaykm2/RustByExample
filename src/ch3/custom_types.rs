@@ -144,4 +144,19 @@ mod custom_types {
         println!("Linked list has length: {}", list.len());
         println!("{}", list.stringify());
     }
+
+    static LANGUAGE: &str="Rust";
+    const THRESHOLD: i32=0;
+    fn is_big(num:i32) -> bool{
+        num > THRESHOLD
+    }
+    pub fn constants(){
+        let num = 121;
+
+        // Access constant in the main thread
+        println!("This is {}", LANGUAGE);
+        println!("The threshold is {}", THRESHOLD);
+        println!("{} is {}", num, if is_big(num) { "big" } else { "small" });
+       // THRESHOLD = 12;
+    }
 }

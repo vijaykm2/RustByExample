@@ -14,4 +14,5 @@ fn main() {
     custom_types::enums_use();
     custom_types::enums_c_like();
     custom_types::enums_list();
+    custom_types::constants();
 }
