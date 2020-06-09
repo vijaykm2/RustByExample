@@ -34,11 +34,11 @@ mod custom_types {
         println!("bottom_right = x = {}, y = {}", bottom_right.x, bottom_right.y);
         let Point { x: top_edge, y: left_edge } = _point;
         let _rectangle = Rectangle {
-            top_left: Point{x: left_edge, y: top_edge},
-            bottom_right
+            top_left: Point { x: left_edge, y: top_edge },
+            bottom_right,
         };
-        let unit:Unit;
-        let pair=Pair(1, 2.2);
+        let _unit: Unit;
+        let pair = Pair(1, 2.2);
         println!("Pair contains {:?}, {:?}", pair.0, pair.1);
         let Pair(integer, decimal) = pair;
         println!("pair contains {}, {}", integer, decimal);

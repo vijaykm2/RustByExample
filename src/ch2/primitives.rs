@@ -2,16 +2,16 @@ mod ch2{
     use std::fmt;
     use std::mem;
     pub fn primitives(){
-        let logical:bool = true;
-        let a_float: f64=111.222;
-        let an_int = 5i32;
-        let default_float=12.23;
-        let default_int=232;
-        let mut inferred_type=123;
-        inferred_type=123123123123123i64;
-        let mut mutable=23;
-        mutable=32;
-        let mutable=false;
+        let _logical: bool = true;
+        let _a_float: f64 = 111.222;
+        let _an_int = 5i32;
+        let _default_float = 12.23;
+        let _default_int = 232;
+        let mut inferred_type = 123;
+        inferred_type = 123123123123123i64;
+        let mut mutable = 23;
+        mutable = 32;
+        let _mutable = false;
     }
 
     pub fn literals_and_operators(){
