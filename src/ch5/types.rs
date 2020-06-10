@@ -45,4 +45,21 @@ mod types {
         println!("size of `i` in bytes: {}", std::mem::size_of_val(&i));
         println!("size of `f` in bytes: {}", std::mem::size_of_val(&f));
     }
+
+    pub fn inference() {
+        let elem = 8u8;
+        let mut vec = Vec::new();
+        vec.push(elem);
+        println!("vec = {:?}", vec);
+        // vec.push("asd");
+    }
+
+    pub fn aliasing() {
+        type NanoSecond = u64;
+        type Inch = u64;
+        type u64_t = u64;
+        let nanos: NanoSecond = 5 as u64_t;
+        let inches: Inch = 3 as u64_t;
+        println!("Nanosecs = {}, inches= {}", nanos, inches);
+    }
 }
