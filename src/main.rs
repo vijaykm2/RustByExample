@@ -1,11 +1,12 @@
 use crate::ch2::primitives;
-use crate::conversion::{conv_from, conv_into};
+use crate::conversion::{conv_from, conv_into, try_from_into, conv_to_string};
 include!("ch1/helloWorld.rs");
 include!("ch2/primitives.rs");
 include!("ch3/custom_types.rs");
 include!("ch4/variable_bindings.rs");
 include!("ch5/types.rs");
 include!("ch6/conversion.rs");
+include!("ch7/expressions.rs");
 fn main() {
     ch1::print_hw();
     ch1::formatted_print();
@@ -35,4 +36,9 @@ fn main() {
     //chapter 6
     conv_from();
     conv_into();
+    try_from_into();
+    conv_to_string();
+
+    //ch7
+    expressions::expr();
 }
