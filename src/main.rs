@@ -1,4 +1,5 @@
 use crate::ch2::primitives;
+use crate::conversion::{conv_from, conv_into};
 include!("ch1/helloWorld.rs");
 include!("ch2/primitives.rs");
 include!("ch3/custom_types.rs");
@@ -25,8 +26,13 @@ fn main() {
     var_bindings::scope_and_shadowing();
     var_bindings::declare_first();
     var_bindings::freezing();
+    //chapter 5
     types::casting();
     types::literals();
     types::inference();
     types::aliasing();
+
+    //chapter 6
+    conv_from();
+    conv_into();
 }
