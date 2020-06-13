@@ -7,6 +7,7 @@ include!("ch4/variable_bindings.rs");
 include!("ch5/types.rs");
 include!("ch6/conversion.rs");
 include!("ch7/expressions.rs");
+include!("ch8/flow_control.rs");
 fn main() {
     ch1::print_hw();
     ch1::formatted_print();
@@ -41,4 +42,6 @@ fn main() {
 
     //ch7
     expressions::expr();
+    flow_control::if_else();
+    flow_control::_loop();
 }
