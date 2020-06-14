@@ -53,4 +53,30 @@ mod flow_control {
         };
         assert_eq!(result, 20)
     }
+
+    pub fn _while() {
+        let mut n = 1;
+        while n < 1000 {
+            fizz_buzz(n);
+            n += 1;
+        }
+    }
+
+    fn fizz_buzz(n: i32) {
+        if n % 15 == 0 {
+            println!("FizzBuzz");
+        } else if n % 3 == 0 {
+            println!("Fizz");
+        } else if n % 5 == 0 {
+            println!("Buzz");
+        } else {
+            println!("{}", n);
+        }
+    }
+
+    pub fn for_range() {
+        for n in 1..=1000 {
+            fizz_buzz(n);
+        }
+    }
 }

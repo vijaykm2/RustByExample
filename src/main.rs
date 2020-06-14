@@ -44,4 +44,6 @@ fn main() {
     expressions::expr();
     flow_control::if_else();
     flow_control::_loop();
+    flow_control::_while();
+    flow_control::for_range();
 }
