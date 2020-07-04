@@ -46,4 +46,8 @@ fn main() {
     flow_control::_loop();
     flow_control::_while();
     flow_control::for_range();
+    flow_control::for_iter();
+    flow_control::_match();
+    flow_control::match_destructuring_tuples();
+    flow_control::match_enums();
 }
