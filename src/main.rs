@@ -50,4 +50,5 @@ fn main() {
     flow_control::_match();
     flow_control::match_destructuring_tuples();
     flow_control::match_enums();
+    flow_control::pointers_ref();
 }

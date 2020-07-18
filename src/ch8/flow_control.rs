@@ -158,4 +158,16 @@ mod flow_control {
             // Don't need another arm because all variants have been examined
         }
     }
+
+    pub fn pointers_ref() {
+        let reference = &5;
+
+        match reference {
+            &val => println!("value is: {} ", &val)
+        }
+
+        match *reference {
+            vaal => println!("Valueis : {}", vaal)
+        }
+    }
 }
